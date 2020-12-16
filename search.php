@@ -18,6 +18,11 @@ function main()
     $text = strtolower(substr(readline(), 2));
     $words = strtolower(substr(readline(), 2));
     
+    // Exit early if no words provided
+    if (strlen($words) == 0) {
+        return;
+    }
+
     $wordList = explode(" ", $words);
     
     // Array to track which words are present
