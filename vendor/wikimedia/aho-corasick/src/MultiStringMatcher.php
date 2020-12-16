@@ -169,7 +169,6 @@ class MultiStringMatcher {
 	 * path exists which spells out each search keyword.
 	 */
 	protected function computeYesTransitions() {
-		var_dump($this->searchKeywords);
 		$this->yesTransitions = [ [] ];
 		$this->outputs = [ [] ];
 		foreach ( $this->searchKeywords as $keyword => $length ) {
