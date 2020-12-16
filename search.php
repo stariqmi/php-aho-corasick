@@ -14,9 +14,9 @@ function searchForWordsInText($words, $text)
 function main()
 {
 
-    // Clean input, remove S= and T= respectively
-    $text = substr(readline(), 2);
-    $words = substr(readline(), 2);
+    // Clean and format input for search
+    $text = strtolower(substr(readline(), 2));
+    $words = strtolower(substr(readline(), 2));
     
     $wordList = explode(" ", $words);
     
